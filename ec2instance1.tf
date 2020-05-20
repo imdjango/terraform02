@@ -9,7 +9,7 @@ vpc_security_group_ids =[
 "${aws_default_security_group.sg14.id}",
 ]
 
-subnet_id = "${aws_subnet.subnet14eu_3a.id}"
+subnet_id = "${aws_subnet.subnet14_3a.id}"
 associate_public_ip_address = true
 tags = {
 Name = "imdjango_3a"

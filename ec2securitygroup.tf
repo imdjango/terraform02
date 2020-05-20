@@ -1,7 +1,7 @@
 resource "aws_security_group" "imdjango" {
 name = "imdjango"
 description = "open ssh port for imdjango"
-vpc_id = "${aws_vpc.vpc14eu.id}"
+vpc_id = "${aws_vpc.vpc14.id}"
 
 ingress {
 from_port = 22

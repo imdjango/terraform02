@@ -1,5 +1,5 @@
 resource "aws_default_security_group" "sg14" {
-vpc_id = "${aws_vpc.vpc14eu.id}"
+vpc_id = "${aws_vpc.vpc14.id}"
 ingress {
 protocol = -1
 self = true

@@ -2,7 +2,7 @@ resource "aws_security_group" "alb14" {
 name = "alb14"
 description = "open HTTP port for ALB"
 
-vpc_id = "${aws_vpc.vpc14eu.id}"
+vpc_id = "${aws_vpc.vpc14.id}"
 
 ingress {
 from_port = 80

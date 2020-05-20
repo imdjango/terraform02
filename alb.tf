@@ -1,20 +1,20 @@
-resource "aws_alb" "alb14eu" {
-name = "alb14eu"
+resource "aws_alb" "alb14" {
+name = "alb14"
 internal = false
-security_groups= ["${aws_security_group.alb14eu.id}"]
+security_groups= ["${aws_security_group.alb14.id}"]
 subnets = [
-"${aws_subnet.subnet14eu_3a.id}",
-"${aws_subnet.subnet14eu_3b.id}"
+"${aws_subnet.subnet14_3a.id}",
+"${aws_subnet.subnet14_3b.id}"
 ]
 
 access_logs {
-bucket = "${aws_s3_bucket.alb14eu.id}"
+bucket = "${aws_s3_bucket.imdjango14eu.id}"
 prefix = "frontend-alb"
 enabled = true
 }
 
 tags = {
-Name = "alb14"
+Name = "imdjango14eu"
 }
 
 lifecycle {create_before_destroy = true}
