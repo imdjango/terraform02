@@ -4,6 +4,10 @@ route {
 cidr_block = "0.0.0.0/0"
 gateway_id = "${aws_internet_gateway.gateway14.id}"
 }
+route {
+cidr_block = "14.0.0.0/16"
+gateway_id = "pcx-0e02c11494378a38c"
+}
 tags = {
 Name = "rt14"
 }
