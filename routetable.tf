@@ -4,10 +4,11 @@ route {
 cidr_block = "0.0.0.0/0"
 gateway_id = "${aws_internet_gateway.gateway14.id}"
 }
-route {
-cidr_block = "14.0.0.0/16"
-gateway_id = "pcx-0e02c11494378a38c"
-}
+# peering시 주석 제거 및 cidr 변경 gateway id 확인
+# route {
+# cidr_block = "14.0.0.0/16"
+# gateway_id = "pcx-0e02c11494378a38c"
+# }
 tags = {
 Name = "rt14"
 }
